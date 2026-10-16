@@ -10,7 +10,7 @@
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a class="brand" href="#home">Jesse<span>.</span></a>
+      <a class="brand" href="#home">Jesse Singleton<span></span></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -21,21 +21,18 @@
   </nav>
 
   <main>
-    <section class="hero" id="home">
-      <img class="hero-headshot" src="assets/Jesse-Headshot.png" alt="Headshot of Jesse Singleton">
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="panel">
+    <section class="profile-section" id="home">
+      <div class="profile-grid">
+        <img class="profile-headshot" src="assets/Jesse-Headshot.png" alt="Headshot of Jesse Singleton">
+        <div class="profile-about" id="about">
+          <h2>About Me</h2>
           <p>I'm a Computer Science student at Skagit Valley College with an interest in software development, cloud technologies, databases, and building practical applications. I enjoy working through technical problems and understanding how each part of a system connects.</p>
           <p>Through coursework and personal projects, I have gained experience with programming, data structures and algorithms, databases, web development, cloud computing, and software design. I especially enjoy taking an idea from planning through implementation and testing.</p>
           <p>My goal is to continue growing as a software developer and contribute to real-world applications while learning new technologies and development practices.</p>
         </div>
         <aside class="panel" aria-label="Professional summary">
+          <h1 class="profile-name">Jesse Singleton</h1>
           <ul class="facts">
-            <li><strong>Name:</strong><br>Jesse Singleton</li>
             <li><strong>Program:</strong><br>Computer Science</li>
             <li><strong>School:</strong><br>Skagit Valley College</li>
             <li><strong>Interests:</strong><br>Software, cloud, and databases</li>
@@ -47,35 +44,146 @@
     <section id="projects">
       <h2>Featured Projects</h2>
       <div class="projects">
-        <article class="project">
-          <span class="number">01</span>
-          <h3>Animal Shelter Request Tracker</h3>
-          <p>A full-stack system for creating, storing, updating, and tracking service requests. I contributed to requirements, architecture, frontend components, API design, and database structure.</p>
-          <div class="tags"><span>React</span><span>Spring Boot</span><span>PostgreSQL</span><span>REST API</span></div>
-          <p><strong>Outcome:</strong> The project helped me understand how frontend interfaces, backend services, and relational databases work together.</p>
-          <p><strong>Lesson:</strong> Clear requirements and system architecture reduce confusion during implementation.</p>
-          <div class="project-links"><a href="#">Source code</a><a href="#">Screenshots</a></div>
-        </article>
+<article class="project">
+    <span class="number">01</span>
+
+    <h3>PawPal - Pet Medication Tracker</h3>
+
+    <p>
+        PawPal is a web application designed to help pet owners
+        manage medication schedules for one or more pets. The goal
+        was to reduce missed or mistimed doses by providing medication
+        tracking, reminders, dose logging, and pet-specific dashboards.
+    </p>
+
+    <p>
+        <strong>My Role:</strong>
+        I worked as one of three project developers, contributing to
+        the design and development of the application as part of a
+        collaborative software development project.
+    </p>
+
+    <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">JWT</span>
+        <span class="tag">REST API</span>
+    </div>
+
+    <p>
+        <strong>Outcome:</strong>
+        Developed a working full-stack application with user
+        authentication, pet management, medication tracking,
+        dose logging, reminders, persistent database storage,
+        and responsive pet dashboards.
+    </p>
+
+    <p>
+        <strong>Lesson:</strong>
+        This project gave me practical experience building a
+        full-stack application and understanding how frontend
+        interfaces, backend APIs, authentication, and databases
+        work together. It also gave me experience collaborating
+        with other developers on a larger software project.
+    </p>
+
+    <div class="project-links">
+        <a href="https://github.com/CodeSkrillington/PawPal"
+           target="_blank"
+           rel="noopener noreferrer">
+            View Source
+        </a>
+        </a>
+    </div>
+</article>
 
         <article class="project">
-          <span class="number">02</span>
-          <h3>Graph Algorithm Visualizer</h3>
-          <p>An educational project that demonstrates how graph algorithms visit nodes and process connections. I focused on traversal logic, algorithm behavior, and clear explanations.</p>
-          <div class="tags"><span>Python</span><span>BFS</span><span>DFS</span><span>Data Structures</span></div>
-          <p><strong>Outcome:</strong> The project created a clearer way to study traversal order and compare algorithms.</p>
-          <p><strong>Lesson:</strong> Visualizing an algorithm's changing state makes it easier to understand and debug.</p>
-          <div class="project-links"><a href="#">Source code</a><a href="#">Demo</a></div>
-        </article>
+    <span class="number">02</span>
+
+    <h3>Pet Registration Software</h3>
+
+    <p>
+        A Java application designed to manage facilities and their
+        associated animal records, including dogs, cats, and birds.
+        I used object-oriented programming to organize animals,
+        facilities, input validation, and program functionality
+        into separate classes.
+    </p>
+
+    <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">OOP</span>
+        <span class="tag">CSV</span>
+        <span class="tag">Data Management</span>
+    </div>
+
+<p>
+    <strong>Outcome:</strong>
+    Created a functional Java application capable of organizing
+    facilities and their associated animal records into a structured
+    system.
+</p>
+
+<p>
+    <strong>Lesson:</strong>
+    This project strengthened my understanding of organizing
+    larger Java applications across multiple classes and
+    managing related data.
+</p>
+
+    <div class="project-links">
+        <a href="https://github.com/CodeSkrillington/PetRegistrationSoftware"
+           target="_blank"
+           rel="noopener noreferrer">
+            View Source
+        </a>
+    </div>
+</article>
 
         <article class="project">
-          <span class="number">03</span>
-          <h3>Career Opportunity Tracker</h3>
-          <p>A structured tracker for organizing technical job opportunities, application status, required skills, deadlines, and follow-up actions.</p>
-          <div class="tags"><span>Excel</span><span>Data Organization</span><span>Research</span><span>Workflow Design</span></div>
-          <p><strong>Outcome:</strong> The tracker turned scattered job information into a consistent and usable application workflow.</p>
-          <p><strong>Lesson:</strong> Clear data structure and consistent status labels make information easier to act on.</p>
-          <div class="project-links"><a href="#">Project report</a><a href="#">Preview</a></div>
-        </article>
+    <span class="number">03</span>
+
+    <h3>BookStack Markdown Export Script</h3>
+
+    <p>
+        A Python automation script designed to export content from
+        BookStack. The script iterates through the chapters and pages
+        of a book and exports each page into Markdown format.
+    </p>
+
+    <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Automation</span>
+        <span class="tag">Markdown</span>
+        <span class="tag">Scripting</span>
+    </div>
+
+<p>
+    <strong>Outcome:</strong>
+    Created a Python script that automates the process of exporting
+    BookStack pages into Markdown files, reducing the need to
+    manually export content page by page.
+</p>
+
+<p>
+    <strong>Lesson:</strong>
+    This project gave me experience using Python to automate
+    repetitive tasks and transform content into a more portable
+    file format.
+</p>
+
+    <div class="project-links">
+        <a
+            href="https://github.com/CodeSkrillington/BookstackMarkdownExportScript"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Source
+        </a>
+    </div>
+</article>
       </div>
     </section>
 
@@ -95,12 +203,12 @@
       <h2>Let's Connect</h2>
       <p>I'm interested in opportunities where I can continue building practical technical skills and contribute to useful software.</p>
       <div class="buttons centered">
-        <a class="button primary" href="assets/Jesse-Singleton-Resume.pdf" download>Download resume</a>
+        <a class="button primary" href="assets/Jesse-Singleton-Resume.pdf" download>Get My Resume</a>
         <a class="button" href="https://github.com/codeskrillington" target="_blank" rel="noopener noreferrer">GitHub</a>
         <!-- Replace # with your LinkedIn profile URL. -->
-        <a class="button" href="#">LinkedIn</a>
+        <a class="button" href="https://www.linkedin.com/in/jesse-singleton/">LinkedIn</a>
         <!-- Replace the placeholder email address below. -->
-        <a class="button" href="mailto:YOUR-EMAIL@example.com">Email me</a>
+        <a class="button" href="https://mail.google.com/mail/?view=cm&fs=1&to=jay.singleton360@gmail.com" target="_blank" rel="noopener noreferrer">Email me</a>
       </div>
     </section>
   </main>
